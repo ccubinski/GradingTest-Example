@@ -1,10 +1,13 @@
+package com.example.project;
 import java.io.*;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+//import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+//import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.fail;
 
 public class MyCustomIterationTest {
 
@@ -13,13 +16,13 @@ public class MyCustomIterationTest {
 
     private LoopsPractice myLP1; //Default
 
-    @Before
+    @BeforeAll
     public void setUp() {
         myLP1 = new LoopsPractice();
         System.setOut(new PrintStream(outContent));
     }
 
-    @After
+    @AfterAll
     public void tearDown() {
         myLP1 = null;
         System.setOut(originalOut);

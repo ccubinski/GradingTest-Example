@@ -1,3 +1,4 @@
+package com.example.project;
 
 /**
  * Write a description of class LoopsPractice here.
@@ -8,7 +9,7 @@
 public class LoopsPractice
 {
 
-    public static boolean isPalindrome(String phrase)
+    public boolean isPalindrome(String phrase)
     {
         int length = phrase.length();
         for(int index = 0; index < length / 2; index++)
